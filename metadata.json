@@ -1,0 +1,6 @@
+{
+  "name": "Magma Editor Portfolio",
+  "description": "High-energy, interactive creative portfolio for Magma Editor who does graphic design, video editing, social media marketing, and brand case studies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

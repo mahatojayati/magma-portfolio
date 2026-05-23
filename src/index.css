@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-serif: "Playfair Display", Garamond, serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-red: #FF1E1E;
+  --color-brand-red-dark: #990000;
+  --color-brand-dark: #050505;
+  --color-brand-slate: #0C0C0E;
+  --color-brand-card: #121214;
+  --color-brand-border: #1F1F24;
+}
+
+@utility glow-red {
+  text-shadow: 0 0 10px rgba(255, 30, 30, 0.6), 0 0 20px rgba(255, 30, 30, 0.4);
+}
+
+@utility glow-red-lg {
+  text-shadow: 0 0 15px rgba(255, 30, 30, 0.8), 0 0 30px rgba(255, 30, 30, 0.5), 0 0 45px rgba(255, 30, 30, 0.3);
+}
+
+@utility glow-box {
+  box-shadow: 0 0 20px rgba(255, 30, 30, 0.2);
+}
+
+@utility glow-box-lg {
+  box-shadow: 0 0 35px rgba(255, 30, 30, 0.4);
+}
+
+/* Custom styles for smooth scrolling and dark theme backgrounds */
+html {
+  scroll-behavior: smooth;
+  background-color: #050505;
+  color: #F5F5F5;
+  font-family: var(--font-sans);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #252528;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF1E1E;
+}
+
